@@ -6,6 +6,10 @@ A modern, eye-catching portfolio website with an integrated AI-powered chatbot t
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.100+-green)
 
+## One-Click Deploy
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/KhattakDataLab/zeeshan-ai-portfolio)
+
 ## Features
 
 - **Modern Dark Theme** - Beautiful gradient animations and glassmorphism effects
@@ -31,7 +35,7 @@ A modern, eye-catching portfolio website with an integrated AI-powered chatbot t
 ## Project Structure
 
 ```
-zeeshan-ai-chatbot/
+zeeshan-ai-portfolio/
 ├── backend/
 │   ├── main.py           # FastAPI server
 │   ├── requirements.txt  # Python dependencies
@@ -42,6 +46,7 @@ zeeshan-ai-chatbot/
 │   ├── main.js           # Page interactions
 │   ├── chatbot-widget.css
 │   └── chatbot-widget.js
+├── render.yaml           # Render deployment config
 └── README.md
 ```
 
@@ -79,16 +84,26 @@ Visit: http://localhost:3000
 
 ## Deployment
 
-### Backend (Railway/Render)
-1. Push code to GitHub
-2. Connect to Railway or Render
-3. Set `GROQ_API_KEY` environment variable
-4. Deploy!
+### Option 1: One-Click Deploy to Render
+1. Click the "Deploy to Render" button above
+2. Set `GROQ_API_KEY` environment variable
+3. Done!
 
-### Frontend (Vercel/Netlify)
-1. Connect GitHub repo
-2. Set build directory to `frontend`
-3. Deploy!
+### Option 2: Manual Deploy
+
+**Backend (Render/Railway):**
+1. Create new Web Service
+2. Connect GitHub repo
+3. Root Directory: `backend`
+4. Build Command: `pip install -r requirements.txt`
+5. Start Command: `uvicorn main:app --host 0.0.0.0 --port $PORT`
+6. Add `GROQ_API_KEY` environment variable
+
+**Frontend (Render/Vercel/Netlify):**
+1. Create new Static Site
+2. Connect GitHub repo
+3. Root Directory: `frontend`
+4. Publish Directory: `./`
 
 ## API Endpoints
 
@@ -102,7 +117,7 @@ Visit: http://localhost:3000
 
 | Variable | Description |
 |----------|-------------|
-| `GROQ_API_KEY` | Your Groq API key |
+| `GROQ_API_KEY` | Your Groq API key (get free at [console.groq.com](https://console.groq.com)) |
 
 ## Author
 
