@@ -1,0 +1,665 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zeeshan Ullah | GenAI Engineer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="chatbot-widget.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Fira+Code:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated Background -->
+    <div class="bg-animation">
+        <div class="bg-gradient"></div>
+        <div class="bg-grid"></div>
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+            <div class="shape shape-4"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <span class="logo-text">&lt;ZU/&gt;</span>
+            </a>
+            <ul class="nav-menu" id="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#experience" class="nav-link">Experience</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+            <button class="nav-toggle" id="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span class="badge-dot"></span>
+                    Available for opportunities
+                </div>
+                <h1 class="hero-title">
+                    <span class="title-line">Hi, I'm</span>
+                    <span class="title-name">Zeeshan Ullah</span>
+                </h1>
+                <div class="hero-subtitle">
+                    <span class="typing-text" id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                <p class="hero-description">
+                    GenAI Engineer who reduced customer support costs by <span class="highlight">40%</span> through RAG-powered chatbots.
+                    Built <span class="highlight">6 production AI systems</span> processing 10K+ daily queries with 92%+ accuracy.
+                </p>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number" data-count="6">0</span>
+                        <span class="stat-label">Production Systems</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="10">0</span><span class="stat-suffix">K+</span>
+                        <span class="stat-label">Daily Queries</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number" data-count="92">0</span><span class="stat-suffix">%</span>
+                        <span class="stat-label">Accuracy Rate</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <span>View My Work</span>
+                        <i class="fas fa-arrow-right"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <span>Let's Talk</span>
+                        <i class="fas fa-comments"></i>
+                    </a>
+                </div>
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/zeeshanullah" target="_blank" class="social-link" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/KhattakDataLab" target="_blank" class="social-link" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="mailto:ullahzeeshan202@gmail.com" class="social-link" aria-label="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="code-window">
+                    <div class="code-header">
+                        <div class="code-dots">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <span class="code-title">zeeshan_ai.py</span>
+                    </div>
+                    <pre class="code-content"><code><span class="keyword">class</span> <span class="class-name">GenAIEngineer</span>:
+    <span class="keyword">def</span> <span class="function">__init__</span>(<span class="param">self</span>):
+        <span class="param">self</span>.name = <span class="string">"Zeeshan Ullah"</span>
+        <span class="param">self</span>.role = <span class="string">"GenAI Engineer"</span>
+        <span class="param">self</span>.skills = [
+            <span class="string">"LangChain"</span>, <span class="string">"RAG"</span>,
+            <span class="string">"OpenAI API"</span>, <span class="string">"FastAPI"</span>
+        ]
+
+    <span class="keyword">def</span> <span class="function">build_ai_solution</span>(<span class="param">self</span>, problem):
+        <span class="comment"># 48-72 hours to MVP</span>
+        <span class="keyword">return</span> <span class="string">"Production Ready"</span></code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <span>Scroll to explore</span>
+            <i class="fas fa-chevron-down"></i>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about" id="about">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">About Me</span>
+                <h2 class="section-title">Turning Ideas into AI Solutions</h2>
+            </div>
+            <div class="about-content">
+                <div class="about-text">
+                    <p class="about-intro">
+                        I'm a <strong>GenAI Engineer</strong> based in Islamabad, Pakistan, specializing in building
+                        production-ready AI systems that solve real business problems.
+                    </p>
+                    <p>
+                        My expertise lies in rapid prototyping - taking an idea to a deployed MVP in <strong>48-72 hours</strong>.
+                        I've built bilingual AI solutions (Urdu-English) that have saved companies thousands in operational costs.
+                    </p>
+                    <div class="about-highlights">
+                        <div class="highlight-item">
+                            <i class="fas fa-rocket"></i>
+                            <div>
+                                <h4>Rapid Development</h4>
+                                <p>Idea to MVP in 48-72 hours</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-chart-line"></i>
+                            <div>
+                                <h4>Cost Reduction</h4>
+                                <p>40% savings on customer support</p>
+                            </div>
+                        </div>
+                        <div class="highlight-item">
+                            <i class="fas fa-globe"></i>
+                            <div>
+                                <h4>Bilingual Solutions</h4>
+                                <p>Urdu-English AI systems</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <div class="image-frame">
+                        <div class="profile-placeholder">
+                            <span class="initials">ZU</span>
+                            <div class="ring ring-1"></div>
+                            <div class="ring ring-2"></div>
+                            <div class="ring ring-3"></div>
+                        </div>
+                    </div>
+                    <div class="floating-badge badge-1">
+                        <i class="fas fa-brain"></i>
+                        <span>AI Expert</span>
+                    </div>
+                    <div class="floating-badge badge-2">
+                        <i class="fas fa-code"></i>
+                        <span>Full Stack</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>GenAI & LLMs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">LangChain</span>
+                        <span class="skill-tag">RAG Systems</span>
+                        <span class="skill-tag">OpenAI API</span>
+                        <span class="skill-tag">LLaMA 3</span>
+                        <span class="skill-tag">Groq API</span>
+                        <span class="skill-tag">AI Agents</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="stat-highlight">6</span> Production Systems Deployed
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Vector Databases</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Pinecone</span>
+                        <span class="skill-tag">ChromaDB</span>
+                        <span class="skill-tag">FAISS</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="stat-highlight">50K+</span> Embeddings Managed
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-server"></i>
+                    </div>
+                    <h3>Backend & APIs</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Python</span>
+                        <span class="skill-tag">FastAPI</span>
+                        <span class="skill-tag">Streamlit</span>
+                        <span class="skill-tag">Docker</span>
+                        <span class="skill-tag">Git</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="stat-highlight">10K+</span> Daily API Requests
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>ML & NLP</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Scikit-learn</span>
+                        <span class="skill-tag">Transformers</span>
+                        <span class="skill-tag">Feature Engineering</span>
+                        <span class="skill-tag">Model Evaluation</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="stat-highlight">92%+</span> Model Accuracy
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud & Deployment</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Azure ML</span>
+                        <span class="skill-tag">CI/CD</span>
+                        <span class="skill-tag">Model Monitoring</span>
+                        <span class="skill-tag">Production Debugging</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="stat-highlight">99.9%</span> System Uptime
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="category-icon">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h3>Languages</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">English (Fluent)</span>
+                        <span class="skill-tag">Urdu (Native)</span>
+                        <span class="skill-tag">Pashto (Conversational)</span>
+                    </div>
+                    <div class="category-stat">
+                        <span class="stat-highlight">Bilingual</span> AI Solutions
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="experience" id="experience">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Career Journey</span>
+                <h2 class="section-title">Professional Experience</h2>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>AI Engineer</h3>
+                            <span class="company">National University of Technology (NUTECH)</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Islamabad</span>
+                            <span class="date"><i class="fas fa-calendar"></i> Jul 2024 - Oct 2024</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built customer churn prediction model with <strong>89% accuracy</strong>, helping retain $50K+ monthly revenue
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Automated ML pipelines on Azure reducing data processing time from 6 hours to 2 hours (<strong>67% improvement</strong>)
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Deployed FastAPI microservices handling <strong>1000+ daily predictions</strong> with 99.9% uptime
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Translated business requirements into <strong>5 production-ready ML models</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Science Trainee</h3>
+                            <span class="company">Codanics</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="location"><i class="fas fa-globe"></i> Remote</span>
+                            <span class="date"><i class="fas fa-calendar"></i> Nov 2023 - Mar 2024</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Delivered <strong>4 end-to-end ML projects</strong> achieving 85-92% accuracy
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built automated feature engineering pipeline reducing manual work from <strong>4 hours to 30 minutes</strong>
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Created reusable ML templates adopted by <strong>10+ team members</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-marker">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Data Analyst Intern</h3>
+                            <span class="company">Inter-Services Public Relations (ISPR)</span>
+                        </div>
+                        <div class="timeline-meta">
+                            <span class="location"><i class="fas fa-map-marker-alt"></i> Islamabad</span>
+                            <span class="date"><i class="fas fa-calendar"></i> Jun 2023 - Sep 2023</span>
+                        </div>
+                        <ul class="timeline-achievements">
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Analyzed <strong>100K+ records</strong> identifying key trends for strategic planning
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Built <strong>10+ interactive Power BI dashboards</strong> saving 15+ hours per week
+                            </li>
+                            <li>
+                                <i class="fas fa-check-circle"></i>
+                                Streamlined data collection process reducing errors by <strong>35%</strong>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="projects" id="projects">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">My Work</span>
+                <h2 class="section-title">Featured Projects</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card featured">
+                    <div class="project-badge">Flagship Project</div>
+                    <div class="project-icon">
+                        <i class="fas fa-user-tie"></i>
+                    </div>
+                    <h3>AI-Powered Hiring Assistant</h3>
+                    <p>Semantic resume-job matching platform serving 500+ users across 3 companies. Reduced hiring time by 65%.</p>
+                    <div class="project-tech">
+                        <span>FastAPI</span>
+                        <span>OpenAI</span>
+                        <span>PostgreSQL</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <span class="stat-value">92%</span>
+                            <span class="stat-desc">Match Accuracy</span>
+                        </div>
+                        <div class="project-stat">
+                            <span class="stat-value">500ms</span>
+                            <span class="stat-desc">Response Time</span>
+                        </div>
+                        <div class="project-stat">
+                            <span class="stat-value">100+</span>
+                            <span class="stat-desc">Resumes/Hour</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/KhattakDataLab/resume-matcher" target="_blank" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>AI Email Generator</h3>
+                    <p>Tone-customizable cold email generator with 5 tone variations serving 200+ monthly users.</p>
+                    <div class="project-tech">
+                        <span>LLaMA 3</span>
+                        <span>Groq API</span>
+                        <span>Streamlit</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <span class="stat-value">95%</span>
+                            <span class="stat-desc">Satisfaction</span>
+                        </div>
+                        <div class="project-stat">
+                            <span class="stat-value">200+</span>
+                            <span class="stat-desc">Monthly Users</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/KhattakDataLab/email-gen" target="_blank" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>Smart Crop Recommendation</h3>
+                    <p>ML model helping farmers optimize crop selection with automated feature engineering pipeline.</p>
+                    <div class="project-tech">
+                        <span>Scikit-learn</span>
+                        <span>Python</span>
+                        <span>Pandas</span>
+                    </div>
+                    <div class="project-stats">
+                        <div class="project-stat">
+                            <span class="stat-value">88%</span>
+                            <span class="stat-desc">Accuracy</span>
+                        </div>
+                        <div class="project-stat">
+                            <span class="stat-value">10K+</span>
+                            <span class="stat-desc">Records</span>
+                        </div>
+                    </div>
+                    <a href="https://github.com/KhattakDataLab" target="_blank" class="project-link">
+                        <span>View Project</span>
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="education">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Education</span>
+                <h2 class="section-title">Academic Background</h2>
+            </div>
+            <div class="education-grid">
+                <div class="education-card main">
+                    <div class="edu-icon">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <div class="edu-content">
+                        <h3>Bachelor of Science in Computer Science</h3>
+                        <p class="edu-school">Abdul Wali Khan University, Pakistan</p>
+                        <div class="edu-meta">
+                            <span><i class="fas fa-calendar"></i> 2020 - 2024</span>
+                            <span><i class="fas fa-star"></i> CGPA: 3.4/4.0</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="certifications">
+                    <h4>Certifications</h4>
+                    <div class="cert-list">
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cert-name">Associate AI Engineer</span>
+                                <span class="cert-issuer">NAVTTC & Microsoft Azure | 2024</span>
+                            </div>
+                        </div>
+                        <div class="cert-item">
+                            <i class="fas fa-certificate"></i>
+                            <div>
+                                <span class="cert-name">AI & Data Science Bootcamp</span>
+                                <span class="cert-issuer">Codanics | 2024</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact" id="contact">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-tag">Get In Touch</span>
+                <h2 class="section-title">Let's Work Together</h2>
+                <p class="section-subtitle">Have a project in mind? Let's build something amazing together.</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:ullahzeeshan202@gmail.com">ullahzeeshan202@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <a href="tel:+923467149800">+92 346 7149800</a>
+                        </div>
+                    </div>
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Islamabad, Pakistan</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-cta">
+                    <p>Ready to transform your ideas into AI-powered solutions?</p>
+                    <div class="cta-buttons">
+                        <a href="mailto:ullahzeeshan202@gmail.com" class="btn btn-primary btn-large">
+                            <i class="fas fa-paper-plane"></i>
+                            <span>Send Email</span>
+                        </a>
+                        <a href="https://linkedin.com/in/zeeshanullah" target="_blank" class="btn btn-secondary btn-large">
+                            <i class="fab fa-linkedin-in"></i>
+                            <span>Connect on LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <span class="logo-text">&lt;ZU/&gt;</span>
+                    <p>Building AI solutions that matter.</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://linkedin.com/in/zeeshanullah" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/KhattakDataLab" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="mailto:ullahzeeshan202@gmail.com"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Zeeshan Ullah. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Chatbot Widget -->
+    <div id="zeeshan-chatbot">
+        <button id="chatbot-toggle" aria-label="Toggle chatbot">
+            <i class="fas fa-comments"></i>
+            <span class="chatbot-pulse"></span>
+        </button>
+
+        <div id="chatbot-window" class="hidden">
+            <div class="chatbot-header">
+                <div class="header-content">
+                    <div class="avatar">
+                        <span>Z</span>
+                        <span class="online-dot"></span>
+                    </div>
+                    <div>
+                        <h3>Zeeshan's AI Assistant</h3>
+                        <p class="status">Ask me anything about Zeeshan!</p>
+                    </div>
+                </div>
+                <button id="chatbot-close" aria-label="Close chatbot">&times;</button>
+            </div>
+
+            <div id="chatbot-messages">
+                <div class="message bot">
+                    <div class="message-content">
+                        Hi! I'm Zeeshan's AI assistant. Ask me anything about his skills, experience, or projects!
+                    </div>
+                </div>
+            </div>
+
+            <div class="chatbot-input-area">
+                <input
+                    type="text"
+                    id="chatbot-input"
+                    placeholder="Ask about skills, projects, experience..."
+                    aria-label="Chat input"
+                />
+                <button id="chatbot-send" aria-label="Send message">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+    <script src="chatbot-widget.js"></script>
+</body>
+</html>
